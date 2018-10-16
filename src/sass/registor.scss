@@ -1,0 +1,243 @@
+@charset "utf-8";
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    background:  #FAFAFA;
+    font: 12px/1.5 "å¾®è½¯é›…é»‘", "é»‘ä½“" ;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+//head
+.head{ 
+    width: 99%;
+    margin: 0 auto;
+    background: #ffffff;
+    border-bottom: solid 2px #F5F5F5;
+    .middle{
+        width: 1000px;
+        height: 80px;
+        margin: 0 auto;
+    }
+    .left{
+        float: left;
+        margin-top:5px;
+    }
+    .right{
+        float: right;
+        margin-top: 50px;
+        font-size: 14px;
+        color: #AAA;
+        line-height: 24px;
+        a{
+            font-weight: 600;
+            margin-left: 4px;
+            color: #06C;
+        }
+    }
+}
+
+//main
+.mian{
+    background: #FAFAFA url(../images/register_bg.png) repeat 50% 50%;
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+    .box{
+        background: rgba(0,0,0,0.15);
+        width: 860px;
+        height: 560px;
+        padding: 10px;
+        margin: 60px auto;
+    }
+    .box-1{
+        background-color: #FFF;
+        display: block;
+        width: 820px;
+        height: 520px;
+        padding: 19px;
+        border: solid 1px #CCC;
+        overflow: hidden;
+    }
+    .left{
+        width: 600px;
+        height: 520px;
+        float: left;
+        .head{
+            width: 580px;
+            border-bottom: solid 1px #E6E6E6;
+            a{
+                display: block;
+                height: 40px;
+                width: 50%;
+                color: #999;
+                text-align: center;
+            }
+        }
+        .content{
+            padding: 50px 80px 0 100px;
+        }
+        form{
+            display: block;
+            dl{
+                background-color: #FFF;
+                width: 398px;
+                height: 52px;
+                margin-top: -1px;
+                border: solid 1px #E6E6E6;
+                margin-bottom:0;
+                float: left;
+            }
+            dt{
+                font-size: 14px;
+                line-height: 20px;
+                color: #666;
+                width: 88px;
+                padding: 16px 0 16px 20px;
+                float: left;
+            }
+            dd{
+                width: 290px;
+                height: 28px;
+                float: left;
+                padding: 12px 0;
+                margin: 0;
+                line-height: 28px;
+                position: relative;
+                label{
+                    color: #000;
+                    line-height: 24px;
+                    background: #FFF5D9 no-repeat 0 0;
+                    text-align: left;
+                    white-space: nowrap;
+                    height: 24px;
+                    padding: 8px 12px 8px 24px;
+                    position: absolute;
+                    z-index: 2;
+                    top: 5px;
+                    left: 200px;
+                    z-index: 10;
+                }
+                input{
+                    font-size: 14px;
+                    line-height: 28px;
+                    width: 290px;
+                    height: 28px;
+                   border: 0;
+                   outline: none;
+                }
+            }
+            span:hover a{
+                display: block;
+            }
+            span{
+                display: block;
+                width: 118px;
+                height: 52px;
+                float: left;
+                margin: -1px 0 0 -1px;
+                border: solid 1px #E6E6E6;
+                position: relative;
+                a{
+                    font-size: 14px;
+                    line-height: 52px;
+                    color: #FFF;
+                    background: rgba(0,0,0,0.5);
+                    text-align: center;
+                    width: 120px;
+                    height: 52px;
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    display: none;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                } 
+            }
+            .ch{
+                font-size: 14px;
+                color: #666;
+                line-height: 30px;
+                width: 400px;
+                height: 30px;
+                margin-top: 15px;
+                float: left;
+                input{
+                    vertical-align: middle
+                }
+            }
+            .but{
+                float: left;
+                margin-top: 15px;
+                .sub{
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #FFF;
+                    background-color: #FF500B;
+                    width: 398px;
+                    height: 42px;
+                    border: solid 1px #F15C18;
+                    border-radius: 3px;
+                    cursor: pointer;
+                }
+            }
+        }
+    } 
+    .right{
+        width: 200px;
+        height: 500px;
+        float: right;
+        padding: 20px 0 0 19px;
+        border-left: solid 1px #E6E6E6;
+        h4{ 
+            font-size: 14px;
+            line-height: 20px;
+            height: 20px;
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: normal
+        }
+        ul{
+            padding: 0;
+        }
+        li{
+            color: #999;
+            line-height: 24px;
+            margin-bottom: 10px;
+            padding-left: 12px;
+            font-size: 12px;
+            i{
+                background: url(../images/login_pic.png) no-repeat;
+                vertical-align: middle;
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                margin-right: 8px;
+            }
+            .con1{
+                background-position: 0 -76px;
+            }
+            .con2{
+                background-position: -30px -76px;
+            }
+            .con3{
+                background-position: -60px -76px;
+            }
+            .con4{
+                background-position: -120px -76px;
+            }
+            .con5{
+                background-position: -150px -76px;
+            }
+        }
+    }
+}
+@import "footer"

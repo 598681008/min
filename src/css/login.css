@@ -1,0 +1,231 @@
+@charset "UTF-8";
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+body {
+  background: #FAFAFA;
+  font: 12px/1.5 "å¾®è½¯é›…é»‘", "é»‘ä½“"; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+.head {
+  width: 98%;
+  margin: 0 auto;
+  background: #ffffff;
+  border-bottom: solid 2px #F5F5F5; }
+  .head .middle {
+    width: 1000px;
+    height: 80px;
+    margin: 0 auto; }
+  .head .left {
+    float: left;
+    margin-top: 5px; }
+  .head .right {
+    float: right;
+    margin-top: 30px; }
+    .head .right .right-1 {
+      width: 40px;
+      height: 40px;
+      float: left;
+      margin-right: 10px; }
+      .head .right .right-1 img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%; }
+    .head .right .right-2 {
+      width: 260px;
+      float: left;
+      font-size: 14px;
+      color: #AAA;
+      line-height: 20px; }
+      .head .right .right-2 a {
+        color: #06C;
+        font-weight: 600; }
+
+.main {
+  width: 1000px;
+  height: 600px;
+  margin: 20px auto; }
+  .main .left {
+    width: 450px;
+    height: 350px;
+    float: left;
+    margin: 30px 0; }
+  .main .right {
+    background-color: #FFF;
+    width: 480px;
+    height: 460px;
+    border: solid 1px #E6E6E6;
+    border-radius: 5px;
+    float: right;
+    position: relative; }
+    .main .right .narrow {
+      background: url(../images/login_pic.png) no-repeat -280px 0;
+      width: 17px;
+      height: 9px;
+      position: absolute;
+      z-index: 1;
+      top: -9px;
+      left: 160px; }
+    .main .right .middle-1 {
+      width: 440px;
+      margin: auto;
+      height: 343px; }
+      .main .right .middle-1 ul {
+        height: 40px;
+        border-bottom: solid 1px #E6E6E6;
+        margin-top: 20px; }
+        .main .right .middle-1 ul li {
+          float: left;
+          width: 50%;
+          text-align: center; }
+        .main .right .middle-1 ul a {
+          font-size: 18px;
+          color: #999;
+          line-height: 24px;
+          padding-bottom: 13px; }
+      .main .right .middle-1 form {
+        margin-top: 30px;
+        margin-left: 45px; }
+      .main .right .middle-1 dl {
+        width: 348px;
+        border: solid 1px #E6E6E6;
+        height: 52px;
+        margin-top: -1px;
+        float: left;
+        position: relative; }
+        .main .right .middle-1 dl dt {
+          font-size: 14px;
+          line-height: 20px;
+          color: #666;
+          width: 88px;
+          padding: 15px 0 15px 20px;
+          float: left; }
+        .main .right .middle-1 dl dd {
+          height: 28px;
+          padding-top: 9px;
+          line-height: 20px; }
+          .main .right .middle-1 dl dd #error {
+            font-size: 16px;
+            width: 200PX;
+            height: 28px;
+            line-height: 28px;
+            position: absolute;
+            top: 10px;
+            left: 200px;
+            color: red; }
+        .main .right .middle-1 dl input {
+          height: 28px;
+          font-size: 14px;
+          border: 0;
+          outline: 0; }
+      .main .right .middle-1 .yan {
+        position: relative; }
+        .main .right .middle-1 .yan span {
+          width: 118px;
+          height: 52px;
+          float: left;
+          margin: -1px 0 0 -1px;
+          border: solid 1px #E6E6E6; }
+        .main .right .middle-1 .yan img {
+          width: 100%;
+          height: 100%; }
+      .main .right .middle-1 .handle {
+        margin-top: 15px;
+        width: 352px;
+        float: left;
+        line-height: 20px; }
+        .main .right .middle-1 .handle span {
+          color: #999;
+          font-size: 12px;
+          float: left; }
+        .main .right .middle-1 .handle input {
+          vertical-align: middle; }
+        .main .right .middle-1 .handle a {
+          float: right;
+          font-size: 12px; }
+      .main .right .middle-1 .submit {
+        float: left;
+        margin-top: 8px; }
+        .main .right .middle-1 .submit #btn {
+          width: 348px;
+          font-size: 16px;
+          font-weight: 600;
+          color: #FFF;
+          background-color: #FF500B;
+          height: 42px;
+          border: solid 1px #F15C18;
+          border-radius: 3px;
+          cursor: pointer; }
+    .main .right .bottom-1 {
+      width: 340px;
+      float: left;
+      margin: 10px 0;
+      margin-left: 45px; }
+      .main .right .bottom-1 h4 {
+        font-size: 12px;
+        font-weight: 600;
+        height: 20px;
+        line-height: 20px;
+        margin-bottom: 10px; }
+      .main .right .bottom-1 a {
+        font-size: 12px;
+        color: #aaa; }
+      .main .right .bottom-1 i {
+        margin-right: 3px;
+        vertical-align: middle;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background: url(../images/login_pic.png) no-repeat -64px 0; }
+
+.footercontent {
+  width: 100%;
+  height: 180px;
+  background: #343a3a;
+  text-align: center; }
+  .footercontent .wrapper {
+    width: 1200px;
+    margin: 0 auto; }
+    .footercontent .wrapper p {
+      color: #eeeeee;
+      word-spacing: 5px;
+      padding: 15px 0 0; }
+      .footercontent .wrapper p a {
+        color: #eeeeee;
+        margin-right: 15px;
+        margin-left: 5px; }
+      .footercontent .wrapper p i {
+        background: url(../images/gh.png);
+        margin-right: 4px;
+        vertical-align: middle;
+        width: 18px;
+        height: 20px;
+        display: inline-block; }
+    .footercontent .wrapper ul {
+      width: 520px;
+      margin: 0 auto;
+      padding: 20px 0 10px; }
+      .footercontent .wrapper ul li {
+        display: block;
+        float: left;
+        margin-right: 20px; }
+      .footercontent .wrapper ul a {
+        display: block;
+        width: 108px;
+        height: 40px; }
+      .footercontent .wrapper ul .con1 {
+        background: url(../images/yangguang-footer.png); }
+      .footercontent .wrapper ul .con2 {
+        background: url(../images/yangguang-footer.png) -244px 0; }
+      .footercontent .wrapper ul .con3 {
+        background: url(../images/yangguang-footer.png) -366px 0; }
+      .footercontent .wrapper ul .con4 {
+        background: url(../images/yangguang-footer.png) -490px 0; }
+
+/*# sourceMappingURL=login.css.map */

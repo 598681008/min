@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="css/registor.css">
+</head>
+<body>
+    <div class="head">
+        <div class="middle">
+            <div class="left">
+                <a href="#">
+                    <img src="https://pic3.cnrmall.com/image/df/e5/dfe5c0db500c119e8d570142f184ee2d.png" alt="">
+                </a>
+            </div>
+            <div class="right">
+                我已经注册，现在就
+                <a href="#">登录</a>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- main -->
+    <div class="mian">
+       <div class="box">
+           <div class="box-1">
+               <div class="left">
+                   <div class="head">
+                       <a href="#">手机注册</a>
+                   </div>
+                   <div class="content">
+                       <form action="http://10.31.162.22/yangguang/php/reg.php" method="post" id="form1">
+                           <dl>
+                               <dt>手机号：</dt>
+                               <dd>
+                                   <input name="mobile" type="text" class="text" id="mobile" placeholder="请输入手机号码" autocomplete="off" maxlength="11">
+                                </dd>
+                           </dl>
+                           <dl>
+                                <dt>密码：</dt>
+                                <dd >
+                                        <input name="password" type="password" class="text" id="password" placeholder="请输入密码" autocomplete="off" maxlength="11">
+                                </dd>
+                            </dl>
+                            <dl>
+                                    <dt>重复密码：</dt>
+                                    <dd >
+                                            <input type="password" name="repass"  placeholder="请再次输入密码" id="repass"/>
+                                    </dd>
+                                </dl>
+                            <div class="ch">
+                                    <input type="checkbox" checked="checked" value="1" class="checkbox" id="mobileAgreeClause" name="agreeClause">
+                                    阅读并同意 
+                                  <a href="#">《服务协议》</a>
+                            </div>
+                            <div class="but">
+                                <input  class="sub" type="submit" value="注册" name="submit" />
+                            </div> 
+                       </form>
+                   </div>
+               </div>
+               <div class="right">
+                   <div class="right-mian">
+                       <h4>注册之后您可以</h4>
+                       <ul>
+                           <li >
+                               <i class="con1"></i>
+                               购买商品支付订单 
+                           </li>
+                           <li >
+                                <i class="con2"></i>
+                                收藏商品收藏店铺
+                            </li>
+                            <li >
+                               <i class="con3"></i>
+                               安全交易诚信无忧
+                           </li>
+                           <li >
+                               <i class="con4"></i>
+                               会员等级享受特权
+                           </li>
+                           <li >
+                               <i class="con5"></i>
+                               交易评价站外分享
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+       </div> 
+    </div>
+    <div class="footercontent"></div>
+
+
+    <script src="script/thirdplugins/jquery.js" type="text/javascript"></script>
+    <script src="script/js/index.js" type="text/javascript"></script> 
+    <script src="script/js/jquery.validate.js" type="text/javascript"></script> 
+    <script>
+      $(function(){  
+        $('#form1').validate({
+            rules:{
+                mobile:{
+                    required:true,
+                    rangelength:[11,11]  
+                },
+                password:{
+                    required:true,
+                    rangelength:[6,20]
+                },
+                repass:{
+							required:true,
+							equalTo:'#password'
+						}
+            },
+            messages:{
+                mobile:{
+                    required:'手机号不能为空',
+                    rangelength:'请输入正确的手机号'
+                },
+                password:{
+                    required:'密码不能为空',
+                    rangelength:'密码6到20位'
+                },
+                repass:{
+                    required:'密码重复不能为空'
+                }
+            }
+        })
+    })
+    </script>
+</body>
+</html>
