@@ -18,4 +18,4 @@ gulp.task('watch',function(){
     gulp.watch('src/*.html',function(){
         gulp.run('minifyhtml');
     });
-})
+}) 
